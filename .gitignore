@@ -11,7 +11,7 @@ yarn-error.log
 
 # Build directories
 /dist/
-/build/
+build/
 
 # Logs
 logs/

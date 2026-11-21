@@ -3,6 +3,7 @@
 Upload two photos and turn them into an animated GIF (morph, transition or dissolve) using the Runway ML API. React + Tailwind CSS frontend, Node.js/Express backend.
 
 ![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?logo=tailwindcss&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white)
@@ -21,7 +22,7 @@ Upload two photos and turn them into an animated GIF (morph, transition or disso
 
 | Layer    | Tech                                                   |
 |----------|--------------------------------------------------------|
-| Frontend | React 18 (Create React App), Tailwind CSS 3, Axios     |
+| Frontend | React 18 (Vite), Tailwind CSS 3, Axios                 |
 | Backend  | Node.js (ES modules), Express, Multer, Axios, dotenv   |
 | AI       | Runway ML API                                          |
 
@@ -29,7 +30,7 @@ Upload two photos and turn them into an animated GIF (morph, transition or disso
 
 ### Prerequisites
 
-- Node.js and npm
+- Node.js 20.19+ (or 22.12+) and npm
 - A Runway ML API key
 
 ### Backend
@@ -59,8 +60,10 @@ In a second terminal:
 ```bash
 cd frontend
 npm install
-npm start
+npm start        # Vite dev server
 ```
+
+To create a production build (output in `frontend/build/`) and preview it locally, run `npm run build` and then `npm run preview`.
 
 Open http://localhost:3000, upload two images, choose an animation type and click **Generate Animation**.
 
@@ -78,8 +81,9 @@ ImageAnimation/
 ├── backend/
 │   └── server.js          # Express API: upload, call Runway ML, save GIF
 └── frontend/
-    ├── src/App.js         # Upload UI, animation type picker, result viewer
-    └── tailwind.config.js
+    ├── src/App.jsx        # Upload UI, animation type picker, result viewer
+    ├── tailwind.config.js
+    └── vite.config.js
 ```
 
 ## License

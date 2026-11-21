@@ -40,7 +40,7 @@ app.post('/animate', upload.array('images', 2), async (req, res) => {
 
     // Choose AI service (in a real app, you might add logic to select or rotate services)
     const service = ANIMATION_SERVICES.RUNWAY;
-    console.log(service.apiKey, service.url);
+    console.log(`Calling ${service.url} (API key ${service.apiKey ? 'set' : 'NOT set'})`);
 
     // Create FormData for the API request
     const formData = new FormData();

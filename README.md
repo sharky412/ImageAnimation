@@ -7,6 +7,7 @@ Upload two photos and turn them into an animated GIF (morph, transition or disso
 ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white)
 ![Runway ML](https://img.shields.io/badge/AI-Runway_ML-000000)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ## Features
 
@@ -80,3 +81,7 @@ ImageAnimation/
     ├── src/App.js         # Upload UI, animation type picker, result viewer
     └── tailwind.config.js
 ```
+
+## License
+
+Released under the [MIT License](LICENSE).

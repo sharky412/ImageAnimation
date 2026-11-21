@@ -33,3 +33,6 @@ coverage/
 
 # Temporary files
 *.swp
+
+# User uploads (multer creates this folder at runtime)
+backend/uploads/
